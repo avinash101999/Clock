@@ -3,88 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="World Clocks - View the current time in different locations around the world.">
-    <meta name="keywords" content="world clocks, time zones, current time, global time">
-    <meta name="author" content="Your Name">
-    <title>World Clocks</title>
+    
+    <title>World Time Dashboard | Live Global Clocks & Time Zones</title>
+    <meta name="description" content="Track current local time across major global cities including New York, London, Tokyo, and Mumbai. Accurate, real-time world clock dashboard.">
+    <meta name="keywords" content="world clock, time zones, live time, global time converter, est to ist, utc time">
+    <meta name="author" content="World Clocks">
+    <link rel="canonical" href="https://yourwebsite.com/">
+    
+    <meta property="og:title" content="World Time Dashboard">
+    <meta property="og:description" content="Real-time world clock for global travelers and remote teams.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "World Time Dashboard",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "description": "A tool to view current times in different time zones around the world."
+    }
+    </script>
 </head>
 <body>
+
     <header>
-        <h1>World Clocks</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#clocks">Clocks</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>World<span class="highlight">Time</span></h1>
+            <div class="controls">
+                <input type="text" id="search-bar" placeholder="Search city (e.g., Tokyo)...">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Welcome to World Clocks</h2>
-            <p>View the current time in different locations around the world.</p>
+        <div id="ad-banner-top" class="ad-container">
+            </div>
+
+        <section id="dashboard">
+            <div class="grid-container" id="clock-grid">
+                </div>
         </section>
 
-        <section id="clocks" class="clock-container">
-            <div class="clock" id="local">
-                <h2>Local Time</h2>
-                <div class="time" id="time-local"></div>
-                <div class="date" id="date-local"></div>
-            </div>
-            <div class="clock" id="india">
-                <h2>India</h2>
-                <div class="time" id="time-india"></div>
-                <div class="date" id="date-india"></div>
-            </div>
-            <div class="clock" id="new-york">
-                <h2>New York</h2>
-                <div class="time" id="time-new-york"></div>
-                <div class="date" id="date-new-york"></div>
-            </div>
-            <div class="clock" id="london">
-                <h2>London</h2>
-                <div class="time" id="time-london"></div>
-                <div class="date" id="date-london"></div>
-            </div>
-            <div class="clock" id="tokyo">
-                <h2>Tokyo</h2>
-                <div class="time" id="time-tokyo"></div>
-                <div class="date" id="date-tokyo"></div>
-            </div>
-            <div class="clock" id="sydney">
-                <h2>Sydney</h2>
-                <div class="time" id="time-sydney"></div>
-                <div class="date" id="date-sydney"></div>
-            </div>
-            <div class="clock" id="paris">
-                <h2>Paris</h2>
-                <div class="time" id="time-paris"></div>
-                <div class="date" id="date-paris"></div>
-            </div>
-            <div class="clock" id="dubai">
-                <h2>Dubai</h2>
-                <div class="time" id="time-dubai"></div>
-                <div class="date" id="date-dubai"></div>
-            </div>
-        </section>
-
-        <section id="ads">
-            <h2>Advertisements</h2>
-            <!-- Google Ads Placeholder -->
-            <div class="ad-space">
-                <p>Your Ad Here</p>
-            </div>
-            <div class="ad-space">
-                <p>Your Ad Here</p>
-            </div>
-        </section>
+        <div id="ad-banner-bottom" class="ad-container">
+             </div>
     </main>
 
     <footer>
-        <p>© 2024 World Clocks. All rights reserved.</p>
+        <p>© 2025 World Time Dashboard. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
